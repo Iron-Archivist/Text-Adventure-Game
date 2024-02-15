@@ -1,0 +1,15 @@
+[Event: NotWorldIntro]
+Yes, That is True!
+No, What are you talking about?
+Real Shit?
+Is a Jok
+[Event: WorldIntro]
+The Good Choice
+The Bad Choice
+Real Shit?
+Is a Jok
+[Event: HeyWaitLOLWTF]
+Seriously, How?
+Even Worse, Why?
+Real Shit?
+Is a Jok
