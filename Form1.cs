@@ -50,7 +50,16 @@ namespace Text_Adventure_Game
                 }
                 if (Capturing)
                 {
-                    DisplayText += line + "\n";
+                    if (Regex.IsMatch(line, @"/c1"))
+                    { UIButton1.Text = line.Replace("/c1", "");}
+                    else if (Regex.IsMatch(line, @"/c2"))
+                    { UIButton2.Text = line.Replace("/c2", ""); }
+                    else if (Regex.IsMatch(line, @"/c3"))
+                    { UIButton3.Text = line.Replace("/c3", ""); }
+                    else if (Regex.IsMatch(line, @"/c4"))
+                    { UIButton4.Text = line.Replace("/c4","");}
+                    else
+                    {DisplayText += line + "\n";}
                 }
             }
 

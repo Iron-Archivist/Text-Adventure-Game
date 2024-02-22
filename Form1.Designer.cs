@@ -39,10 +39,10 @@
             GameDisplayText = new Label();
             panel3 = new Panel();
             tableLayoutPanel3 = new TableLayoutPanel();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            UIButton1 = new Button();
+            UIButton2 = new Button();
+            UIButton3 = new Button();
+            UIButton4 = new Button();
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel1.SuspendLayout();
             panel4.SuspendLayout();
@@ -166,7 +166,7 @@
             GameDisplayText.Name = "GameDisplayText";
             GameDisplayText.Size = new Size(1112, 721);
             GameDisplayText.TabIndex = 0;
-            GameDisplayText.Text = "Welcome to the world of Pokémon, where creatures called Pokémon roam! Embark on adventures, battle other trainers, and strive to become a Pokémon Master! ";
+            GameDisplayText.Text = "Default Text That Will Be Erased Immediately Upon Input if Everything Is working Correctly";
             // 
             // panel3
             // 
@@ -184,10 +184,10 @@
             tableLayoutPanel3.ColumnCount = 2;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Controls.Add(button1, 0, 0);
-            tableLayoutPanel3.Controls.Add(button2, 1, 0);
-            tableLayoutPanel3.Controls.Add(button3, 0, 1);
-            tableLayoutPanel3.Controls.Add(button4, 1, 1);
+            tableLayoutPanel3.Controls.Add(UIButton1, 0, 0);
+            tableLayoutPanel3.Controls.Add(UIButton2, 1, 0);
+            tableLayoutPanel3.Controls.Add(UIButton3, 0, 1);
+            tableLayoutPanel3.Controls.Add(UIButton4, 1, 1);
             tableLayoutPanel3.Location = new Point(5, 145);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 2;
@@ -196,59 +196,59 @@
             tableLayoutPanel3.Size = new Size(1102, 100);
             tableLayoutPanel3.TabIndex = 0;
             // 
-            // button1
+            // UIButton1
             // 
-            button1.BackColor = SystemColors.ButtonFace;
-            button1.Dock = DockStyle.Fill;
-            button1.Font = new Font("Power Green Small", 9.75F);
-            button1.ForeColor = Color.FromArgb(76, 79, 105);
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(545, 42);
-            button1.TabIndex = 1;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            UIButton1.BackColor = SystemColors.ButtonFace;
+            UIButton1.Dock = DockStyle.Fill;
+            UIButton1.Font = new Font("Power Green Small", 9.75F);
+            UIButton1.ForeColor = Color.FromArgb(76, 79, 105);
+            UIButton1.Location = new Point(3, 3);
+            UIButton1.Name = "UIButton1";
+            UIButton1.Size = new Size(545, 42);
+            UIButton1.TabIndex = 1;
+            UIButton1.Text = "button1";
+            UIButton1.UseVisualStyleBackColor = false;
+            UIButton1.Click += button1_Click;
             // 
-            // button2
+            // UIButton2
             // 
-            button2.BackColor = SystemColors.ButtonFace;
-            button2.BackgroundImageLayout = ImageLayout.None;
-            button2.Dock = DockStyle.Fill;
-            button2.Font = new Font("Power Green Small", 9.75F);
-            button2.ForeColor = Color.FromArgb(76, 79, 105);
-            button2.Location = new Point(554, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(545, 42);
-            button2.TabIndex = 2;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = false;
+            UIButton2.BackColor = SystemColors.ButtonFace;
+            UIButton2.BackgroundImageLayout = ImageLayout.None;
+            UIButton2.Dock = DockStyle.Fill;
+            UIButton2.Font = new Font("Power Green Small", 9.75F);
+            UIButton2.ForeColor = Color.FromArgb(76, 79, 105);
+            UIButton2.Location = new Point(554, 3);
+            UIButton2.Name = "UIButton2";
+            UIButton2.Size = new Size(545, 42);
+            UIButton2.TabIndex = 2;
+            UIButton2.Text = "button2";
+            UIButton2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // UIButton3
             // 
-            button3.BackColor = SystemColors.ButtonFace;
-            button3.Dock = DockStyle.Fill;
-            button3.Font = new Font("Power Green Small", 9.75F);
-            button3.ForeColor = Color.FromArgb(76, 79, 105);
-            button3.Location = new Point(3, 51);
-            button3.Name = "button3";
-            button3.Size = new Size(545, 46);
-            button3.TabIndex = 3;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = false;
+            UIButton3.BackColor = SystemColors.ButtonFace;
+            UIButton3.Dock = DockStyle.Fill;
+            UIButton3.Font = new Font("Power Green Small", 9.75F);
+            UIButton3.ForeColor = Color.FromArgb(76, 79, 105);
+            UIButton3.Location = new Point(3, 51);
+            UIButton3.Name = "UIButton3";
+            UIButton3.Size = new Size(545, 46);
+            UIButton3.TabIndex = 3;
+            UIButton3.Text = "button3";
+            UIButton3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // UIButton4
             // 
-            button4.BackColor = SystemColors.ButtonFace;
-            button4.Dock = DockStyle.Fill;
-            button4.Font = new Font("Power Green Small", 9.75F);
-            button4.ForeColor = Color.FromArgb(76, 79, 105);
-            button4.Location = new Point(554, 51);
-            button4.Name = "button4";
-            button4.Size = new Size(545, 46);
-            button4.TabIndex = 4;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = false;
+            UIButton4.BackColor = SystemColors.ButtonFace;
+            UIButton4.Dock = DockStyle.Fill;
+            UIButton4.Font = new Font("Power Green Small", 9.75F);
+            UIButton4.ForeColor = Color.FromArgb(76, 79, 105);
+            UIButton4.Location = new Point(554, 51);
+            UIButton4.Name = "UIButton4";
+            UIButton4.Size = new Size(545, 46);
+            UIButton4.TabIndex = 4;
+            UIButton4.Text = "button4";
+            UIButton4.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel2
             // 
@@ -301,9 +301,9 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Label GameDisplayText;
         private TableLayoutPanel tableLayoutPanel3;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button UIButton1;
+        private Button UIButton2;
+        private Button UIButton3;
+        private Button UIButton4;
     }
 }

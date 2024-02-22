@@ -2,9 +2,9 @@
 So what actually happens here now that I think of it?
 [Event: WorldIntro]
 Welcome to the world of Pokémon, where creatures called Pokémon roam! Embark on adventures, battle other trainers, and strive to become a Pokémon Master!
-/c Yes
-/c No
-/c Maybe
-/c I don't know
+/c1 Yes
+/c2 No
+/c3 Maybe
+/c4 I don't know
 [Event: HeyWaitLOLWTF]
 This is bad text that you shouldn't see. This is an absolute disaster. How did you get here? I will never financially recover from this
