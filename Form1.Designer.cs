@@ -93,11 +93,11 @@
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Font = new Font("Power Green", 12F);
+            label3.Font = new Font("Microsoft Sans Serif", 12F);
             label3.ForeColor = Color.FromArgb(76, 79, 105);
             label3.Location = new Point(84, 33);
             label3.Name = "label3";
-            label3.Size = new Size(64, 21);
+            label3.Size = new Size(67, 20);
             label3.TabIndex = 4;
             label3.Text = "100/100";
             label3.TextAlign = ContentAlignment.MiddleCenter;
@@ -105,15 +105,16 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Power Green", 12F);
+            label2.Font = new Font("Microsoft Sans Serif", 12F);
             label2.ForeColor = Color.FromArgb(76, 79, 105);
             label2.Location = new Point(89, 12);
             label2.Name = "label2";
-            label2.Size = new Size(54, 21);
+            label2.Size = new Size(56, 20);
             label2.TabIndex = 3;
             label2.Text = "Health";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             label2.UseWaitCursor = true;
+            label2.Click += label2_Click;
             // 
             // progressBar1
             // 
@@ -137,11 +138,11 @@
             // 
             PlayerLabel.Anchor = AnchorStyles.None;
             PlayerLabel.AutoSize = true;
-            PlayerLabel.Font = new Font("Power Green", 12F);
+            PlayerLabel.Font = new Font("Microsoft Sans Serif", 12F);
             PlayerLabel.ForeColor = Color.FromArgb(76, 79, 105);
-            PlayerLabel.Location = new Point(94, 156);
+            PlayerLabel.Location = new Point(95, 156);
             PlayerLabel.Name = "PlayerLabel";
-            PlayerLabel.Size = new Size(53, 21);
+            PlayerLabel.Size = new Size(52, 20);
             PlayerLabel.TabIndex = 1;
             PlayerLabel.Text = "Player";
             // 
@@ -160,13 +161,13 @@
             GameDisplayText.BackColor = Color.FromArgb(230, 233, 239);
             GameDisplayText.BorderStyle = BorderStyle.FixedSingle;
             GameDisplayText.Dock = DockStyle.Fill;
-            GameDisplayText.Font = new Font("Power Green", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GameDisplayText.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             GameDisplayText.ForeColor = Color.FromArgb(76, 79, 105);
             GameDisplayText.Location = new Point(0, 0);
             GameDisplayText.Name = "GameDisplayText";
             GameDisplayText.Size = new Size(1112, 721);
             GameDisplayText.TabIndex = 0;
-            GameDisplayText.Text = "Default Text That Will Be Erased Immediately Upon Input if Everything Is working Correctly";
+            GameDisplayText.Text = "Does a text adventure require a narrative?";
             // 
             // panel3
             // 
@@ -200,55 +201,58 @@
             // 
             UIButton1.BackColor = SystemColors.ButtonFace;
             UIButton1.Dock = DockStyle.Fill;
-            UIButton1.Font = new Font("Power Green Small", 9.75F);
+            UIButton1.Font = new Font("Microsoft Sans Serif", 9.75F);
             UIButton1.ForeColor = Color.FromArgb(76, 79, 105);
             UIButton1.Location = new Point(3, 3);
             UIButton1.Name = "UIButton1";
             UIButton1.Size = new Size(545, 42);
             UIButton1.TabIndex = 1;
-            UIButton1.Text = "button1";
+            UIButton1.Text = "Yes, of course";
             UIButton1.UseVisualStyleBackColor = false;
-            UIButton1.Click += button1_Click;
+            UIButton1.Click += UIButton1_Click;
             // 
             // UIButton2
             // 
             UIButton2.BackColor = SystemColors.ButtonFace;
             UIButton2.BackgroundImageLayout = ImageLayout.None;
             UIButton2.Dock = DockStyle.Fill;
-            UIButton2.Font = new Font("Power Green Small", 9.75F);
+            UIButton2.Font = new Font("Microsoft Sans Serif", 9.75F);
             UIButton2.ForeColor = Color.FromArgb(76, 79, 105);
             UIButton2.Location = new Point(554, 3);
             UIButton2.Name = "UIButton2";
             UIButton2.Size = new Size(545, 42);
             UIButton2.TabIndex = 2;
-            UIButton2.Text = "button2";
+            UIButton2.Text = "This is a game?";
             UIButton2.UseVisualStyleBackColor = false;
+            UIButton2.Click += UIButton2_Click;
             // 
             // UIButton3
             // 
             UIButton3.BackColor = SystemColors.ButtonFace;
             UIButton3.Dock = DockStyle.Fill;
-            UIButton3.Font = new Font("Power Green Small", 9.75F);
+            UIButton3.Font = new Font("Microsoft Sans Serif", 9.75F);
             UIButton3.ForeColor = Color.FromArgb(76, 79, 105);
             UIButton3.Location = new Point(3, 51);
             UIButton3.Name = "UIButton3";
             UIButton3.Size = new Size(545, 46);
             UIButton3.TabIndex = 3;
-            UIButton3.Text = "button3";
+            UIButton3.Text = "No, why would it";
             UIButton3.UseVisualStyleBackColor = false;
+            UIButton3.Click += UIButton3_Click;
             // 
             // UIButton4
             // 
             UIButton4.BackColor = SystemColors.ButtonFace;
             UIButton4.Dock = DockStyle.Fill;
-            UIButton4.Font = new Font("Power Green Small", 9.75F);
+            UIButton4.Font = new Font("Microsoft Sans Serif", 9.75F);
             UIButton4.ForeColor = Color.FromArgb(76, 79, 105);
             UIButton4.Location = new Point(554, 51);
             UIButton4.Name = "UIButton4";
             UIButton4.Size = new Size(545, 46);
             UIButton4.TabIndex = 4;
-            UIButton4.Text = "button4";
+            UIButton4.Text = "Don't be lazy";
             UIButton4.UseVisualStyleBackColor = false;
+            UIButton4.Click += UIButton4_Click;
             // 
             // tableLayoutPanel2
             // 

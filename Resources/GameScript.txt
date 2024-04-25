@@ -1,10 +1,354 @@
 [Event: NotWorldIntro]
 So what actually happens here now that I think of it?
+/c1 Yes
+/c2 No
+/c3 Maybe
+/c4 I don't know
+
 [Event: WorldIntro]
 Welcome to the world of Pokémon, where creatures called Pokémon roam! Embark on adventures, battle other trainers, and strive to become a Pokémon Master!
 /c1 Yes
 /c2 No
 /c3 Maybe
 /c4 I don't know
+
 [Event: HeyWaitLOLWTF]
 This is bad text that you shouldn't see. This is an absolute disaster. How did you get here? I will never financially recover from this
+/c1 Original Text
+/c2 Unique Text
+/c3 WorldIntro
+/c4 I don't know
+
+[Event: Yes]
+Yes, yes, not no, but yeah maybe nah
+/c1 Original Text
+/c2 Unique Text
+/c3 WorldIntro
+/c4 I don't know
+
+[Event: Original Text]
+Original Text Event
+With Bonus Lines
+Your welcome
+/c1 Yes
+/c2 No
+/c3 Maybe
+/c4 I don't know
+
+[Event: Unique Text]
+Funny Unique Text Test
+/c1 Yes
+/c2 No
+/c3 Maybe
+/c4 I don't know
+
+[Event: I don't know]
+Cool converging events
+/c1 Yes
+/c2 No
+/c3 Maybe
+/c4 I don't know
+
+[Event: A Question]
+Does a text adventure require a narrative?
+/c1 Yes, of course
+/c2 No, why would it
+/c3 This is a game?
+/c4 Don't be lazy
+
+[Event: Yes, of course]
+What do you think makes a game?
+/c1 The ability to fail
+/c2 The ability to win
+/c3 Both
+/c4 Neither
+
+[Event: No, why would it]
+It can be difficult to avoid. Telling a story. Connecting events. A few words begets more and then we're
+/c1 Back where we started
+/c2 Caught in the flow of progress
+/c3 Having a conversation
+/c4 Wasting Time
+
+[Event: Back where we started]
+Does a text adventure require a narrative?
+/c1 Yes, of course
+/c2 No, why would it
+/c3 This is a game?
+/c4 Don't be lazy
+
+[Event: This is a game?]
+Maybe not, certainly that was the assignment I was tasked with. Perhaps I got distracted along the way, now we're just
+/c1 Having a conversation
+/c2 Wasting Time
+/c3 Caught in the flow of progress
+/c4 Exploring
+
+[Event: Exploring]
+Washed ashore on a sandy beach, time marked the beating sun. We sift through grains of sand and old footprints. Leaving behind new trails. What do we hope to find here?
+/c1 Something New
+/c2 Something Old
+/c3 Something Lost
+/c4 Maybe just, something different
+
+[Event: Something Old]
+I have a few forgotten things, they might be old at least to me, I know a few places you've seen, you could go back to, but maybe, you just want to see
+/c1 Something New
+/c2 A forgotten thing
+/c3 A place I've been before
+/c4 Something Old
+
+[Event: A forgotten thing]
+You should be careful not to get lost in the past, sometimes it means getting left behind
+/c1 Back where we started
+/c2 Worldintro
+/c3 Unique Text
+/c4 HeyWaitLOLWTF
+
+[Event: Having a conversation]
+But we're not really, are we? Your choices are so limited, and my words, weren't meant for you. But, you can press a button, as if you spoke, and read a response as if I'd listened.
+/c1 Tell me about this game
+/c2 Send me into an inescapable trap
+/c3 This is a game?
+/c4 Don't be lazy
+
+[Event: Tell me about this game]
+I'm not sure it's really a game, I haven't written enough for there to be a goal, a purpose, beyond fufillment of an assignment, the actual requirements of which I have not read. But, this 'game' is a Text Adventure of sorts, when I picked this subject I had grander ideas of what this would be, or could be, if one doesn't stumble into this line of dialogue they may very well wonder why there is a health bar and place for other UI elements. I simply have not made them. In its current form this is mainly an interpreter of a text file with a rather simple format. As I continue writing I consider ideas of how this could be a dialogue puzzle of sorts, leading the reader through conversational dead ends and loops that through thorough exploration may lead them to some path that is "correct" however that seems a disservice to their time and mine. I suppose in its absence this introspective look at this project may serve as a destination.
+/c1 What about the code
+/c2 Don't be lazy
+/c3 I want to feel like I've won
+/c4 Back where we started
+
+[Event: What about the code]
+It's not complicated but that much, I'm reasonably proud of. In starting this project my goal was to create something that reasonably extensible that would allow the script of the game and its options to be written in plain text, and as I write this script in notepad I feel as though I've succeeded to some extent. If I were to continue this I have a few ideas of how I could add features, flags, variables, HP, etc. but I think that will be left to another time or another game. The Form1.CS file that contains the code for this project is 94 lines. When the user (that's you) clicks a button, the code searches a text file called GameScript for an event with a name matching the text on the button you clicked, and appends it to a string, setting a label (this text box) equal to the value of that string, then it checks for a set of characters used to denote dialogue options in the text file, and fills the buttons text property with those, and once it reaches the next event, it simply stops until the user presses another button. The regular expression used to parse this text is the most complicated part, it is black magic and I want no more of it. And, more importantly, I have no more for you.
+/c1 Don't be lazy
+/c2 Don't be lazy
+/c3 Don't be lazy
+/c4 Don't be lazy
+
+[Event: I want to feel like I've won]
+This is it, you've done it, you found the secret combination of options that has achieved victory. You did it! You're great! 
+              .-=========-.
+              \'-=======-'/
+              _|   .=.   |_
+             ((|  {{1}}  |))
+              \|   /|\   |/
+               \__ '`' __/
+                 _`) (`_
+               _/_______\_
+              /___________\
+/c1 Congratulations!
+/c2 Congratulations!
+/c3 Congratulations!
+/c4 New Game+
+
+[Event: Don't be lazy]
+It's too late, by the time you've read this I've already gone to bed and given up on this game.
+/c1 Well, what now?
+/c2 Good night I guess?
+/c3 This is a game?
+/c4 Funni Button
+
+[Event: Funni Button]
+Holy shit you did it, you found the real secret option that means you won. That was a lie, but I did promise this button was funny so uh, have a look at this 
+               ____________________
+              |                    |
+              |     PSYCHIATRIC    |
+              |        HELP        |
+              |____________________|
+              ||  ,-..'``.        ||
+              || (,-..'`. )       ||
+              ||   )-c - `)\      ||
+,.,._.-.,_,.,-||,.(`.--  ,`',.-,_,||.-.,.,-,._.
+           ___||____,`,'--._______||
+          |`._||______`'__________||
+          |   ||     __           ||
+          |   ||    |.-' ,|-      ||
+_,_,,..-,_|   ||    ._)) `|-      ||,.,_,_.-.,_
+         . `._||__________________||   ____    .
+  .              .           .     . <.____`>
+.SSt  .      .     .      .    .   _.()`'()`'  .
+/c1 Banished to the start
+/c2 Banished to the start
+/c3 Banished to the start
+/c4 Banished to the start
+
+[Event: Banished to the start]
+Does a text adventure require a narrative?
+/c1 Yes, of course
+/c2 No, why would it
+/c3 This is a game?
+/c4 Don't be lazy
+
+[Event: Can I start over?]
+Does a text adventure require a narrative?
+/c1 Yes, of course
+/c2 No, why would it
+/c3 This is a game?
+/c4 Don't be lazy
+
+[Event: New Game+]
+Did it feel good winning the game?
+/c1 Yes, of course
+/c2 No, why would it
+/c3 This is a game?
+/c4 Don't be lazy
+
+[Event: Well, what now?]
+I'm not sure really, I don't know what you've seen, how much more I could show you, we communicate through boxes of text written hastily to achieve some end that of which we are both unsure.
+/c1 Tell me about this game
+/c2 Send me into an inescapable trap
+/c3 Good night I guess?
+/c4 A place I've been before
+
+[Event: Good night I guess?]
+A lesser man would call this the true ending
+/c1 zzz
+/c2 zzz
+/c3 zzz
+/c4 zzz
+
+[Event: Send me into an inescapable trap]
+I met a traveller from an antique land,
+Who said—“Two vast and trunkless legs of stone
+Stand in the desert. . . . Near them, on the sand,
+Half sunk a shattered visage lies, whose frown,
+And wrinkled lip, and sneer of cold command,
+Tell that its sculptor well those passions read
+Which yet survive, stamped on these lifeless things,
+The hand that mocked them, and the heart that fed;
+And on the pedestal, these words appear:
+My name is Ozymandias, King of Kings;
+Look on my Works, ye Mighty, and despair!
+Nothing beside remains. Round the decay
+Of that colossal Wreck, boundless and bare
+The lone and level sands stretch far away.”
+/c1 Let me out
+/c2 I desire freedom
+/c3 I have to restart?
+/c4 This is bad design
+
+[Event: Something New]
+I simply refuse
+/c1 Back where we started
+/c2 New Game+
+/c3 Can I start over?
+/c4 Banished to the start
+
+[Event: Something Lost]
+The Game
+
+[Event: Maybe just, something different]
+We're no strangers to love
+You know the rules and so do I
+A full commitment's what I'm thinking of
+You wouldn't get this from any other guy
+
+I just want to tell you how I'm feeling
+Gotta make you understand
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+We've known each other for so long
+Your heart's been aching but you're too shy to say it
+Inside we both know what's been going on
+We know the game and we're gonna play it
+
+And if you ask me how I'm feeling
+Don't tell me you're too blind to see
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+(Ooh give you up)
+(Ooh give you up)
+(Ooh) Never gonna give, never gonna give (give you up)
+(Ooh) Never gonna give, never gonna give (give you up)
+
+We've known each other for so long
+Your heart's been aching but you're too shy to say it
+Inside we both know what's been going on
+We know the game and we're gonna play it
+
+I just want to tell you how I'm feeling
+Gotta make you understand
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+/c1 I want to feel like I've won
+/c2 The game
+/c3 Well, what now?
+/c4 A place I've been before
+
+[Event: The Game]
+You just lost
+
+[Event: A place I've been before]
+Every second is a new world, time altered irreversably, marching ever forward. We're always somewhere we haven't been before.
+/c1 Caught in the flow of progress
+/c2 A place I've been before
+/c3 A forgotten thing
+/c4 Can I start over?
+
+[Event: Caught in the flow of progress]
+I wonder what would happen if time stood still, left dormant like a painting. Would that world be beautiful? Is it with passing time that we carve wonder into the world like a statue from marble stone?
+/c1 This is a game?
+/c2 I want to feel like I've won
+/c3 A Question
+/c4 Wasting Time
+
+[Event: The ability to fail]
+Well, this is it, this is your fail state. You have unsuccessfully completed this game.
+/c1 Don't be lazy
+/c2 Can I start over?
+/c3 Well, what now?
+/c4 Send me into an inescapable trap
+
+[Event: The ability to win]
+How much does it matter, do you hope to gain something from winning?
+/c1 Yes, of course
+/c2 I want to feel like I've won
+/c3 Something New
+/c4 Send me into an inescapable trap
+
+[Event: Both]
+And it is here that you've achieved neither, is that a loss? If you could still strive for more would this be victory?
+/c1 Yes, of course
+/c2 I want to feel like I've won
+/c3 Something New
+/c4 Send me into an inescapable trap
+
+[Event: Neither]
+Then maybe, there's something else, that can be gained simply from asking
+/c1 A Question
+/c2 A Question
+/c3 A Question
+/c4 A Question
+
+[Event: Wasting Time]
+Maybe we can't get back the time we've lost, or maybe we pile on more with every passing moment, carrying the weight of it until we break
+/c1 A Question
+/c2 Caught in the flow of progress
+/c3 Well, what now?
+/c4 Can I Start Over?
+
+[Event: Can I Start Over?]
+No, none of us can, not really.
+But you can go back to the start of the text adventure
+/c1 Back where we started
+/c2 New Game+
+/c3 A Question
+/c4 Banished to the start
